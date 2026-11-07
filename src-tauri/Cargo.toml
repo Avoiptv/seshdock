@@ -1,0 +1,18 @@
+[package]
+name = "seshdock"
+version = "0.1.0"
+edition = "2021"
+authors = ["Seif Amara"]
+description = "Find and resume every AI coding session on your machine"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+dirs = "7.0.0"
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+ruzstd = "0.9.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
